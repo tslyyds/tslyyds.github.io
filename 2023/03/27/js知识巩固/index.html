@@ -1,0 +1,1531 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="js知识巩固, xxxxxxxxxx">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>js知识巩固 | TSL的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">TSL的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">TSL的个人博客</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">js知识巩固</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-03-27
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="并发，并行，同步，异步"><a href="#并发，并行，同步，异步" class="headerlink" title="并发，并行，同步，异步"></a>并发，并行，同步，异步</h2><p><strong>并发</strong>：单纯指的是计算机能同时执行多项任务，单线程和多线程的计算机都可以执行并发操作（单线程上是分配时间片段来实现并发，多线程则是通过并行来实现并发）</p>
+<p><strong>并行</strong>：将多个任务分配到多个处理器上同时执行任务，在同一时刻，有多个任务在执行。需要多核处理器来完成。所以单核处理器没有并行，只能有并发</p>
+<blockquote>
+<p>同步和异步指的是两种不同的编程模式：</p>
+<p>同步：上一个任务执行结束才能执行下一个任务，因此同步中没有并发和并行的概念</p>
+<p>异步：在执行a的时候也可以同时执行b，典型的方式就是创建多线程编程，但是js是没有多线程的，但是可以做到单线程的并发，典型一是回调函数比如SetTimeout，函数创建之后会继续执行，当到达时间之后再执行回调函数</p>
+</blockquote>
+<h2 id="Array-、String的常见方法区分"><a href="#Array-、String的常见方法区分" class="headerlink" title="Array 、String的常见方法区分"></a>Array 、String的常见方法区分</h2><p><strong>Array</strong> </p>
+<ul>
+<li><p>原数组不变</p>
+<blockquote>
+<p>concat()：arr.concat([7,8,9])</p>
+<p>join()</p>
+<p>slice(start,end(不包含))</p>
+<p>toString()  &#x2F;&#x2F;用逗号隔开的字符串</p>
+</blockquote>
+</li>
+<li><p>原数组会变</p>
+<blockquote>
+<p>push()</p>
+<p>pop()</p>
+<p>unshift()</p>
+<p>shift()</p>
+<p>reverse()</p>
+<p>splice(start,deleteCount,item1,item2)</p>
+</blockquote>
+</li>
+<li><p>其他</p>
+<blockquote>
+<p>includes()</p>
+<p>Array.from([],()&#x3D;&gt;{})   浅复制</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>String</strong> </p>
+<ul>
+<li><p>原字符串不变</p>
+<blockquote>
+<p> concat()</p>
+<p>slice(start,end(不包含))</p>
+<p>split()  &#x2F;&#x2F;三者区别不大</p>
+<p>substr()  &#x2F;&#x2F;第二个参数为截取字符串的长度</p>
+<p>substring() &#x2F;&#x2F;第二个参数为截取字符串的索引(不包含)</p>
+<p>repeat(3) &#x2F;&#x2F; 重复该字符串3次 </p>
+</blockquote>
+</li>
+<li><p>原字符串会变</p>
+</li>
+<li><p>其他</p>
+<blockquote>
+<p>match() &#x2F;&#x2F;匹配正则表达式</p>
+<p>replace(a,b) &#x2F;&#x2F;将a用b替换</p>
+<p>search() &#x2F;&#x2F;搜索与正则表达式匹配的位置</p>
+<p><code>toLowerCase</code>转换成小写，<code>toUpperCase()</code>转换成大写</p>
+<p>includes() &#x2F;&#x2F;是否包含字符(串) startwith()、endwith()</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Object方法"><a href="#Object方法" class="headerlink" title="Object方法"></a>Object方法</h2><ol>
+<li>Object.getPrototypeOf(*)：返回参数对象的原型。这是获取原型对象的标准方法</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var F = function () &#123;&#125;;</span><br><span class="line">    var f = new F();</span><br><span class="line">Object.getPrototypeOf(f) === F.prototype // true</span><br><span class="line"></span><br><span class="line">/*语法上，Object.getPrototypeOf(f)===f.__proto__*/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*a instanceof b 判断的是a是否是b的实例化对象，b是否是a的构造函数，即Object.getPrototypeOf(a) 是否等于 b.prototype */</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Object.setPrototypeOf(*，*)：参数对象设置原型，返回该参数对象。它接受两个参数，第一个是现有对象，第二个是原型对象</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let a = &#123;&#125;;</span><br><span class="line">let b = &#123;x: 1&#125;;</span><br><span class="line">Object.setPrototypeOf(a, b);</span><br><span class="line">Object.getPrototypeOf(a)===b; //true</span><br><span class="line">a.x // 1</span><br><span class="line"></span><br><span class="line">/*语法上，Object.setPrototypeOf(a,b)和Object.create([原型])相似*/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//模拟new的实现</span><br><span class="line">let F = function()&#123;</span><br><span class="line">	this.foo = &#x27;bar&#x27;</span><br><span class="line">&#125;</span><br><span class="line">let f = Object.setPrototypeOf(&#123;&#125;, F.prototype)</span><br><span class="line">F.call(f)</span><br><span class="line">console.log(f.foo)   //bar</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>Object.create()：以第一个参数为原型，返回一个实例对象，第二个参数为初始化的值，该值是实例对象的，不属于第一个参数。</li>
+</ol>
+<blockquote>
+<p>返回的是一个对象，也可以是一个函数，但是不能是一个构造函数，指定了一个原型后，那么创建出来的新对象可以继承该原型上的属性和方法</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let F = function()&#123;</span><br><span class="line">    this.name = &#x27;bar&#x27;</span><br><span class="line">&#125;</span><br><span class="line">let b= Object.create(F.prototype, &#123;name: &#123;value: &#x27;bar&#x27;&#125;&#125;);</span><br><span class="line">console.log(b); //创建出来的b是一个函数，因为原型是函数</span><br><span class="line"></span><br><span class="line">const a = &#123;</span><br><span class="line">	name:&#x27;bar&#x27;</span><br><span class="line">&#125;</span><br><span class="line">const b = Object.create(a)</span><br><span class="line">console.log(b.name)  //bar  创建出来的是一个继承了a的对象</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*可以用该方法代替，实质是新建一个空的构造函数F，然后让F.prototype属性指向参数对象obj，最后返回一个F的实例，从而实现让该实例继承obj的属性*/</span><br><span class="line">if (typeof Object.create !== &#x27;function&#x27;) &#123;</span><br><span class="line">  Object.create = function (obj) &#123;</span><br><span class="line">    function F() &#123;&#125;</span><br><span class="line">    F.prototype = obj;</span><br><span class="line">    return new F();</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*三个对象是等价的*/</span><br><span class="line">var obj1 = Object.create(&#123;&#125;);</span><br><span class="line">var obj2 = Object.create(Object.prototype);</span><br><span class="line">var obj3 = new Object();</span><br><span class="line">//空对象，没有原型</span><br><span class="line">var obj4 = Object.create(null);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*三种创建对象的方法*/</span><br><span class="line">let obj1 = &#123;&#125;;</span><br><span class="line">let obj2 = new Object();</span><br><span class="line">let obj3 = Object.create();</span><br><span class="line">//前二者区别不大，第三者区别在于可以指定其原型</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let F = function()&#123;</span><br><span class="line">    this.name = &#x27;bar&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let a = Object.setPrototypeOf(&#123;&#125;, F.prototype);</span><br><span class="line">F.call(a);</span><br><span class="line"></span><br><span class="line">let b= Object.create(F.prototype, &#123;name: &#123;value: &#x27;bar&#x27;&#125;&#125;);</span><br><span class="line"></span><br><span class="line">console.log(a.__proto__ === b.__proto__); // true</span><br><span class="line"></span><br><span class="line">/*两者有相关联的地方，a通过call绑定原型使实例获得原型属性，b通过在create初始化的时候传入第二个参数传给实例了*/</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Object.prototype.isPrototypeOf(*)  是给实例用的，用于判断是否是参数的原型</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var o1 = &#123;&#125;;</span><br><span class="line">var o2 = Object.create(o1);</span><br><span class="line">var o3 = Object.create(o2);</span><br><span class="line"></span><br><span class="line">o2.isPrototypeOf(o3) // true</span><br><span class="line">o1.isPrototypeOf(o3) // true</span><br><span class="line"></span><br><span class="line">Object.prototype.isPrototypeOf(&#123;&#125;) // true</span><br><span class="line">Object.prototype.isPrototypeOf([]) // true</span><br><span class="line">Object.prototype.isPrototypeOf(/xyz/) // true</span><br><span class="line">Object.prototype.isPrototypeOf(Object.create(null)) // false</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let F = function()&#123;</span><br><span class="line">    this.name = &#x27;bar&#x27;</span><br><span class="line">&#125;</span><br><span class="line">let b = Object.create(F.prototype);</span><br><span class="line">let c = Object.create(b);</span><br><span class="line">let d = new F();</span><br><span class="line"></span><br><span class="line">console.log(b.isPrototypeOf(c)) //true</span><br><span class="line">console.log(F.prototype.isPrototypeOf(c)) //true</span><br><span class="line">console.log(Object.getPrototypeOf(b)===F.prototype) //true </span><br><span class="line">console.log(Object.getPrototypeOf(d)===F.prototype) //true</span><br><span class="line">console.log(Object.getPrototypeOf(c)===F.prototype) //false</span><br><span class="line"></span><br><span class="line">console.log(Object.getPrototypeOf([])===Object.prototype) //false</span><br><span class="line">/*由此可见，Object.getPrototypeOf(a)和a.isPrototypeOf(..)是相反的联系，但是前者只能获取参数的最近一层的原型，而后者没有层次之分，无论a是..的上面几层的原型*/</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>Object.is(a,b)：比较a和b是否相等，注意：+0和-0不相等，NaN和NaN相等</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Object.is(+0, -0)        // false</span><br><span class="line">Object.is(NaN, NaN)      // true</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>Object.assign(target,b,c..)：对象的合并，将源对象（source）的所有<strong>可枚举</strong>属性，复制到目标对象</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*不可枚举对象不能被复制*/</span><br><span class="line">Object.assign(&#123; b: &#x27;c&#x27; &#125;,</span><br><span class="line">    Object.defineProperty(&#123;&#125;, &#x27;invisible&#x27;, &#123;</span><br><span class="line">        enumerable: false,</span><br><span class="line">        value: &#x27;hello&#x27;</span><br><span class="line">    &#125;)</span><br><span class="line">)           // &#123; b: &#x27;c&#x27; &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*属性名为Symbol值的属性，也会被Object.assign拷贝*/</span><br><span class="line">Object.assign(&#123; a: &#x27;b&#x27; &#125;, &#123; [Symbol(&#x27;c&#x27;)]: &#x27;d&#x27; &#125;)</span><br><span class="line"></span><br><span class="line">// &#123; a: &#x27;b&#x27;, Symbol(c): &#x27;d&#x27; &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*为对象添加方法*/</span><br><span class="line">Object.assign(SomeClass.prototype,&#123;method1()&#123;..&#125;,method2()&#123;...&#125;&#125;)</span><br><span class="line"></span><br><span class="line">相当于</span><br><span class="line">SomeClass.prototype.method1 = function()&#123;...&#125;</span><br><span class="line">SomeClass.prototype.method2 = function()&#123;...&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>Object.getOwnPropertyDescriptors(obj,key)：查看对象、对象属性的描述对象</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let obj = &#123; foo: 123 &#125;;</span><br><span class="line">Object.getOwnPropertyDescriptor(obj, &#x27;foo&#x27;)</span><br><span class="line">//  &#123;</span><br><span class="line">//    value: 123,</span><br><span class="line">//    writable: true,</span><br><span class="line">//    enumerable: true,</span><br><span class="line">//    configurable: true</span><br><span class="line">//  &#125;</span><br><span class="line"></span><br><span class="line">/*有一些操作会忽略enumerable为false的属性*/</span><br><span class="line">for...in循环：只遍历对象自身的和继承的可枚举的属性</span><br><span class="line">Object.keys()：返回对象自身的所有可枚举的属性的键名</span><br><span class="line">JSON.stringify()：只串行化对象自身的可枚举的属性</span><br><span class="line">Object.assign()会忽略enumerable为false的属性只拷贝对象自身的可枚举的属性	</span><br><span class="line"></span><br><span class="line">/*还有一些自带有的属性，比如tostring、length等等*/</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>Object.protototype.hasOwnProperty(key)：指示对象是否具有指定的属性作为自身（不继承）属性,会忽略掉那些从原型链上继承到的属性</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let obj=new Object();</span><br><span class="line">obj.a=5;</span><br><span class="line">console.log(obj.hasOwnProperty(&#x27;a’))       // true</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li>Object.defineProperty(obj,prop,desc)：给目标对象的属性添加配置</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let object1 = &#123;&#125;;</span><br><span class="line">Object.defineProperty(object1, &#x27;property1&#x27;, &#123;</span><br><span class="line">    value: 42,</span><br><span class="line">    writable: false</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">object1.property1 = 77;</span><br><span class="line">console.log(object1.property1);    // 42</span><br></pre></td></tr></table></figure>
+
+<h2 id="遍历对象属性的方法"><a href="#遍历对象属性的方法" class="headerlink" title="遍历对象属性的方法"></a>遍历对象属性的方法</h2><blockquote>
+<p>for in &#x2F;&#x2F;遍历属性和原型上的可迭代属性</p>
+<p>Object.keys(obj) &#x2F;&#x2F;遍历自身的可迭代属性</p>
+<p>Object.getOwnPropertyNames(obj)  &#x2F;&#x2F;遍历自身所有属性，包括不可迭代</p>
+<p>Object.getOwnPropertySymbols(obj)  &#x2F;&#x2F;遍历自身的Symbol类型属性</p>
+<p>Reflect.ownKeys(obj)  &#x2F;&#x2F;遍历自身所有的属性（包括不可迭代，Symbol，但是不包括原型上的属性）</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">    a: 1,</span><br><span class="line">    [Symbol(&#x27;b&#x27;)]: 2,</span><br><span class="line">&#125;</span><br><span class="line">Object.prototype.b = 2</span><br><span class="line">Object.defineProperty(obj, &#x27;c&#x27;, &#123;</span><br><span class="line">    value: 3,</span><br><span class="line">    enumerable: false</span><br><span class="line">&#125;)</span><br><span class="line">Object.defineProperty(obj, Symbol(&#x27;d&#x27;), &#123;</span><br><span class="line">    value: 4,</span><br><span class="line">    enumerable:false</span><br><span class="line">&#125;)</span><br><span class="line">for(let key in obj) &#123;</span><br><span class="line">    console.log(key);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(Object.keys(obj));</span><br><span class="line"></span><br><span class="line">console.log(Object.getOwnPropertyNames(obj));</span><br><span class="line"></span><br><span class="line">console.log(Object.getOwnPropertySymbols(obj));</span><br><span class="line"></span><br><span class="line">console.log(Reflect.ownKeys(obj))</span><br></pre></td></tr></table></figure>
+
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><ul>
+<li><p>基本用法：</p>
+<blockquote>
+<p>&#x2F;****&#x2F;</p>
+</blockquote>
+</li>
+<li><p>标志</p>
+<blockquote>
+<ul>
+<li>可以通过将它附加到正则表达式之后来使用它。 这里给出使用该标志的一个实例 <code>/ignorecase/i</code> ，这个字符串可以匹配字符串 <code>ignorecase</code>、<code>igNoreCase</code> 和 <code>IgnoreCase</code></li>
+<li>若要多次搜寻或提取模式匹配，可以使用 <code>g</code> 标志</li>
+<li>通配符 <code>.</code> 将匹配任何一个字符</li>
+<li><code>[aiu]</code> 是只匹配字符 <code>a</code>、<code>i</code> 或者 <code>u</code> 的字符集</li>
+<li>要匹配小写字母 <code>a</code> 到 <code>e</code>，你可以使用 <code>[a-e]</code></li>
+<li>&#x2F;[0-5]&#x2F; 匹配 <code>0</code> 和 <code>5</code> 之间的任意数字，包含 <code>0</code> 和<code>5</code></li>
+<li>要创建否定字符集，需要在开始括号后面和不想匹配的字符前面放置脱字符（即<code>^</code> ) ； <code>/[^aeiou]/gi</code> 匹配所有非元音字符。 注意，字符 <code>.</code>、<code>!</code>、<code>[</code>、<code>@</code>、<code>/</code> 和空白字符等也会被匹配，该否定字符集仅排除元音字符</li>
+<li><code>/a+/g</code> 会在 <code>abc</code>中匹配到一个匹配项，并且返回 <code>[&quot;a&quot;]</code>。 因为 <code>+</code> 的存在，它也会在 <code>aabc</code> 中匹配到一个匹配项，然后返回 [“<code>aa</code>“],一次或多次</li>
+<li>匹配出现零次或多次的字符<code>/*/</code>，比如&#x2F;go*&#x2F;寻找g或者<code>gooooo</code></li>
+<li><code>/t[a-z]*i/</code> 应用于字符串 <code>&quot;titanic&quot;</code>。 这个正则表达式是一个以 <code>t</code> 开始，以 <code>i</code> 结束，并且中间有一些字母的匹配模式</li>
+<li>正则表达式 <code>/t[a-z]*?i/</code> 匹配字符串 <code>&quot;titanic&quot;</code> 返回 <code>[&quot;ti&quot;]</code>,它会匹配到满足正则表达式的字符串的最小可能部分</li>
+<li>除了在字符集中使用之外，插入符号（^）用于匹配文本是否在字符串的开始位置</li>
+<li>可以使用正则表达式的美元符号 <code>$</code> 来搜寻字符串的结尾</li>
+<li><code>\w</code> 这个缩写等同于<code>[A-Za-z0-9_]</code></li>
+<li><code>\W</code> 搜寻和 <code>\w</code> 相反的匹配模式。 注意，相反匹配模式使用大写字母。 此缩写与 <code>[^A-Za-z0-9_]</code> 是一样的</li>
+<li>查找数字字符的缩写是 <code>\d</code>，注意是小写的 <code>d</code>。 这等同于元字符 <code>[0-9]</code>，它查找 0 到 9 之间任意数字的单个字符；同样的，\D表示非数字</li>
+<li>使用 <code>\s</code> 搜寻空格，其中 <code>s</code> 是小写。 此匹配模式将匹配空格、回车符、制表符、换页符和换行符。 可以认为这类似于元字符 <code>[ \r\t\f\n\v]</code>；同样的，\S表示非空格</li>
+<li>h{3，6}表示h要出现3-6次；{3，}表示至少出现三次；{3}表示出现三次</li>
+<li><code>?</code> 指定可能存在的元素。 这将检查前面的零个或一个元素。 可以将此符号视为前面的元素是可选的；<code>/colou?r/</code> 表示u是可选的，可有可无</li>
+<li>正向先行断言的用法是 <code>(?=...)</code>，其中 <code>...</code> 就是需要存在但不会被匹配的部分；负向先行断言的用法是 <code>(?!...)</code>，其中 <code>...</code> 是希望不存在的匹配模式</li>
+</ul>
+</blockquote>
+</li>
+<li><p>匹配的方法</p>
+<blockquote>
+<p>正则表达式.test(字符串)</p>
+<p>字符串.match(正则表达式)</p>
+<p><code>.replace()</code> 方法来搜索并替换字符串中的文本。 <code>.replace()</code> 的输入首先是想要搜索的正则表达式匹配模式。 第二个参数是用于替换匹配的字符串或用于执行某些操作的函数</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="fetch"><a href="#fetch" class="headerlink" title="fetch"></a>fetch</h2><blockquote>
+<p>返回值是promise对象，可以用来发请求</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">button.addEventListener(&#x27;click&#x27;, (e) =&gt; &#123;</span><br><span class="line">            fetch(&#x27;https://dog.ceo/api/breeds/image/random&#x27;)</span><br><span class="line">                .then(res =&gt; res.json())</span><br><span class="line">                .then(res =&gt; img.src = res.message)</span><br><span class="line">        &#125;)</span><br><span class="line">post.addEventListener(&#x27;click&#x27;, (e) =&gt; &#123;</span><br><span class="line">            fetch(&#x27;https://jsonplaceholder.typicode.com/users&#x27;, &#123;</span><br><span class="line">                    method: &#x27;POST&#x27;,</span><br><span class="line">                    body: JSON.stringify(&#123;</span><br><span class="line">                        name: input.value</span><br><span class="line">                    &#125;),</span><br><span class="line">                    headers: &#123;</span><br><span class="line">                        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                .then(res =&gt; res.json())</span><br><span class="line">                .then(res =&gt; console.log(res))</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="关于Promise"><a href="#关于Promise" class="headerlink" title="关于Promise"></a>关于Promise</h2><ul>
+<li><p>回调地狱</p>
+<blockquote>
+<p>指的是在回调函数中再调用回调函数，比如在<code>ajax</code>函数中的回调函数中要使用其返回的数据再进行下一次<code>ajax</code> ，这就会导致不断重叠嵌套回调函数。意思就是在单线程中，当我们我们在回调函数完成后在执行回调函数的嵌套过程</p>
+</blockquote>
+</li>
+<li><p>Promise构造函数</p>
+<blockquote>
+<p>Promise构造函数接收一个函数，该函数包含两个形参，该两个形参也是函数，执行该函数后会改变实例的state的值；</p>
+<p>实例对象有两个关键属性：state、result</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">new p = new Promise((resolve,error)=&gt;&#123;</span><br><span class="line">	//resolve() #会改变state的值为fulfiled</span><br><span class="line">	//error()   #会改变state的值为rejected</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一旦在该两个函数参数使用时使用的参数，会改变实例对象的result的值</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">new p = new Promise((resolve,error)=&gt;&#123;   </span><br><span class="line">	//resolve(“成功”) #会改变result的值为“成果”    </span><br><span class="line">	//error(“失败”)   #会改变result的值为“失败” </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>then()函数，是实例原型上的一个函数属性，返回值还是一个Promise对象，then()函数接收两个函数参数，分别会在state为<code>fulfiled</code>和<code>rejected</code> 时调用，这两个函数参数都可以接收参数，参数则为result的值，如果state的值未改变(仍为pending)，则不会执行then函数</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">new p = new Promise((resolve,error)=&gt;&#123;   </span><br><span class="line">	//resolve(“成功”) #会改变result的值为“成果”    </span><br><span class="line">	//error(“失败”)   #会改变result的值为“失败” </span><br><span class="line">&#125;)</span><br><span class="line">p.then(</span><br><span class="line">	(fulfiled)=&gt;&#123;</span><br><span class="line">		console.log(fulfiled) //成果</span><br><span class="line">	&#125;,(rejected)=&gt;&#123;</span><br><span class="line">		console.log(rejected) //失败</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>then原型链，由于返回值还是Promise对象，所以可以一直.then().then()，但是后面的then要执行首先得保证前面的then的state不为pending，所以下面介绍如何改变Promise的state的值</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const p = new Promise((resolve,error)=&gt;&#123;   </span><br><span class="line">	//resolve(“成功”) #会改变result的值为“成果”，执行下面的then函数</span><br><span class="line">	</span><br><span class="line">	//error(“失败”)   #会改变result的值为“失败” </span><br><span class="line">&#125;)</span><br><span class="line">const t = p.then(</span><br><span class="line">	(fulfiled)=&gt;&#123;</span><br><span class="line">		console.log(fulfiled) //成功，这一步返回的t是状态为state的Promise对象，不能执行下面的then函数，所以要改变state的值，做法是return *** //***则为下一个then第一个参数函数接收的参数</span><br><span class="line">		</span><br><span class="line">		return &#x27;第一个then执行&#x27;</span><br><span class="line">		</span><br><span class="line">		//当上面代码出错时，则会将该promise对象的state设置为rejected，则会调用第二个then的第二个参数函数</span><br><span class="line">		</span><br><span class="line">		console.log(a)</span><br><span class="line">	&#125;,(rejected)=&gt;&#123;</span><br><span class="line">		console.log(rejected) //失败</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br><span class="line">t.then(</span><br><span class="line">	(fulfiled)=&gt;&#123;</span><br><span class="line">		console.log(fulfiled) //第一个then执行</span><br><span class="line">	&#125;,(rejected)=&gt;&#123;</span><br><span class="line">		console.log(rejected) //a为找到	</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>catch()的作用和then里的第二个函数参数差不多，也是在state的状态为rejected或者抛出错误时执行。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">p.catch((err)=&gt;&#123;</span><br><span class="line">	console.log(err)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>所以一般的Promise的写法是</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">new Promise((res,err)=&gt;&#123;</span><br><span class="line">	</span><br><span class="line">&#125;).then(()=&gt;&#123;</span><br><span class="line"></span><br><span class="line">&#125;).catch(()=&gt;&#123;</span><br><span class="line"></span><br><span class="line">&#125;).finally(()=&gt;&#123;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Promise的一些方法</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Promise.all([p1,p2,p3]) //当p1,p2,p3的promise执行结束后才得到</span><br><span class="line">	一旦</span><br><span class="line">Promise.race([p1,p1,p3]) //谁先完成谁执行</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="迭代器，生成器，Promise，async，await"><a href="#迭代器，生成器，Promise，async，await" class="headerlink" title="迭代器，生成器，Promise，async，await"></a>迭代器，生成器，Promise，async，await</h2><blockquote>
+<p>迭代器：Array或者String的原型上 有<code>[Symbol.iterator]</code> ，其余的，还有<code>Map,Set,TypeArray,arguments,Nodelist</code> </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//自己构造</span><br><span class="line">const arr = [1, 2, 3, 4, 5]</span><br><span class="line">function makeIteroter(arr) &#123;</span><br><span class="line">    var index = 0;</span><br><span class="line">    return &#123;</span><br><span class="line">        next() &#123;</span><br><span class="line">            if (index &lt; arr.length) &#123;</span><br><span class="line">                return &#123;</span><br><span class="line">                    value: arr[index++],</span><br><span class="line">                    done: false</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            return &#123;</span><br><span class="line">                value: undefined,</span><br><span class="line">                done: true</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> const inter = makeIteroter(arr)</span><br><span class="line"> console.log(inter.next())</span><br><span class="line"> console.log(inter.next())</span><br><span class="line"> console.log(inter.next())</span><br><span class="line"> console.log(inter.next())</span><br><span class="line"> console.log(inter.next())</span><br><span class="line"> console.log(inter.next())</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>自定义对象的迭代器：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">            a: 1,</span><br><span class="line">            b: 2,</span><br><span class="line">            c: 3,</span><br><span class="line">            [Symbol.iterator]() &#123;</span><br><span class="line">                var index = 0;</span><br><span class="line">                const map = new Map()</span><br><span class="line">                map.set(&#x27;a&#x27;, 1)</span><br><span class="line">                map.set(&#x27;b&#x27;, 1)</span><br><span class="line">                map.set(&#x27;c&#x27;, 1)</span><br><span class="line">                const newarr = [...map.entries()]</span><br><span class="line">                return &#123;</span><br><span class="line">                    next() &#123;</span><br><span class="line">                        if (index &lt; map.size) &#123;</span><br><span class="line">                            return &#123;</span><br><span class="line">                                value: newarr[index++],</span><br><span class="line">                                done: false</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                        return &#123;</span><br><span class="line">                            value: undefined,</span><br><span class="line">                            done: true</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for (let i of obj) &#123;</span><br><span class="line">            console.log(i)</span><br><span class="line">        &#125;</span><br><span class="line">        const intor = obj[Symbol.iterator]()</span><br><span class="line">        console.log(intor.next())</span><br><span class="line">        console.log(intor.next())</span><br><span class="line">        console.log(intor.next())</span><br><span class="line">        console.log(intor.next())</span><br><span class="line">        console.log(intor.next())</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>生成器：特殊的函数形式</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function* a() &#123;</span><br><span class="line">            yield 1;</span><br><span class="line">            yield 2;</span><br><span class="line">            yield 3;</span><br><span class="line">            yield 4;</span><br><span class="line">        &#125;</span><br><span class="line">const it = a()</span><br><span class="line">console.log(it.next())</span><br><span class="line">console.log(it.next())</span><br><span class="line">console.log(it.next())</span><br><span class="line">console.log(it.next())</span><br><span class="line">console.log(it.next())</span><br><span class="line">for (let iterator of it) &#123;</span><br><span class="line">    console.log(iterator)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>async,await：async将一个函数转变成异步函数，await封装了then语法，可以直接获取异步操作后得到的结果，当遇到await时，会停下来等到获取到结果后才会往下执行</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">async function f()&#123;</span><br><span class="line">	const p = &#x27;&#x27;</span><br><span class="line">	fetch(‘https:/...).then((res)=&gt;p=res)</span><br><span class="line">	//等价于</span><br><span class="line">	const p = await fetch(&#x27;https://....&#x27;) //直接获取到了then后的返回值</span><br><span class="line">&#125;</span><br><span class="line">async function fn() &#123;</span><br><span class="line">			//等于const p = await &#x27;biebb&#x27; 会自动将biebb作为promise对象的result</span><br><span class="line">            const p = await Promise.resolve(&#x27;biebb&#x27;)</span><br><span class="line">            console.log(p)</span><br><span class="line">        &#125;</span><br><span class="line">fn() //biebb</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">async function f()&#123;</span><br><span class="line">	const a = await fetch(&#x27;http:/....&#x27;)  //a执行完成得到结果后才会执行b</span><br><span class="line">	const b = await fetch(&#x27;http:/....&#x27;)</span><br><span class="line">	</span><br><span class="line">	//可以将多个promise用promise.all组合起来，不打破它们的并行操作</span><br><span class="line">	const promiseA = fetch(&#x27;https://....&#x27;)</span><br><span class="line">	const promiseB = fetch(&#x27;https://....&#x27;)</span><br><span class="line">	const [a,b] = await Promise.all([promiseA,promiseB])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><blockquote>
+<blockquote>
+<p>包装类意思应该是指<code>new String(&#39;abc&#39;)</code> 这种</p>
+</blockquote>
+<p>这种情况下，<code>s1</code> &#x3D;&#x3D;&#x3D; <code>s2</code>  但是 <code>s1</code> !&#x3D;&#x3D; <code>s3</code> 是因为new String属于包装类，当我们使用<code>s1.color = &#39;red&#39;</code> 的时候，原本的<code>abc</code> 是不能给予属性的，但是能成果的原因是因为进行了隐式转换，当设置属性值时，会创建<code>const s1 = new String(&#39;abc&#39;) s2=s1.substring(2) s1=null</code> 会先进行包装，再把包装类的实例清除</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> s1 = <span class="string">&#x27;abc&#x27;</span></span><br><span class="line"><span class="keyword">const</span> s2 = <span class="title class_">Strng</span>(<span class="string">&#x27;abc&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> s3 = <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&#x27;abc&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="this指向"><a href="#this指向" class="headerlink" title="this指向"></a>this指向</h2><p>每一个函数都有自己独有的this，不同函数的this时肯定不相同的，即使他们的指向相同</p>
+<p>父函数有能力决定子函数的this指向</p>
+<blockquote>
+<p>默认情况指向window</p>
+</blockquote>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">console.log(this===window) //true</span><br><span class="line"></span><br><span class="line">function test()&#123;</span><br><span class="line">	console.log(this)  //立即执行函数指向window</span><br><span class="line">&#125;</span><br><span class="line">test() //window 相当于window.test()  </span><br><span class="line"></span><br><span class="line">(function()&#123;</span><br><span class="line">	console.log(this) //window  立即执行函数</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>谁调用指向谁</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	foo: function()&#123;</span><br><span class="line">		console.log(this) </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">obj.foo() //obj</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>显示绑定</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">obj.call(window,1,2,3,4,5)</span><br><span class="line">obj.apply(window,[1,2,3,4,5])</span><br><span class="line">obj.bind(window,1,2,3,4,5)   //会返回一个新函数，所以要赋值给新变量后再执行</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在类里面</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Person&#123;</span><br><span class="line">	constructor(name,age)&#123;</span><br><span class="line">		console.log(this)     //指向创建的实例对象，不过此时该对象还没完全创建好	</span><br><span class="line">  		this.name = name;</span><br><span class="line">		this.age = age;</span><br><span class="line">	&#125;</span><br><span class="line">	test()&#123;</span><br><span class="line">		console.log(this)   //指向创建的实例对象</span><br><span class="line">	&#125;</span><br><span class="line">	asyncTest()&#123;</span><br><span class="line">		console.log(this)   //指向创建的实例对象</span><br><span class="line">		setTimeout(function()&#123;</span><br><span class="line">			console.log(this)   //指向window，如果改成箭头函数则指向实例对象</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">const zhangsan = new Person();</span><br><span class="line">zhangsan.test();</span><br><span class="line">zhangsan.asyncTest();</span><br></pre></td></tr></table></figure>
+
+<h2 id="cookie、LocalStorage、sessionStorage"><a href="#cookie、LocalStorage、sessionStorage" class="headerlink" title="cookie、LocalStorage、sessionStorage"></a>cookie、LocalStorage、sessionStorage</h2><blockquote>
+<p>经典的<code>记住我</code> 功能，可以让浏览器保留用户留下的东西</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;span&gt;用户名：&lt;/span&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;username&quot;&gt;</span><br><span class="line">&lt;span&gt;密码：&lt;/span&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;password&quot;&gt;</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;check&quot;&gt;&lt;span&gt;记住我&lt;/span&gt;</span><br><span class="line">&lt;button id=&quot;sumbit&quot;&gt;提交&lt;/button&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    const usernam = document.getElementById(&#x27;username&#x27;)</span><br><span class="line">    const checkbox = document.getElementById(&#x27;check&#x27;)</span><br><span class="line">    const sumbit = document.getElementById(&#x27;sumbit&#x27;)</span><br><span class="line">    let obj = &#123;&#125;;</span><br><span class="line">    let arr = document.cookie.split(&#x27;; &#x27;).map((item) =&gt;</span><br><span class="line">        item.split(&#x27;=&#x27;)</span><br><span class="line">    )</span><br><span class="line">    console.log(arr)</span><br><span class="line">    for (let i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">        let name = arr[i][0];</span><br><span class="line">        let value = arr[i][1];</span><br><span class="line">        obj[name] = decodeURIComponent(value)</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(obj)</span><br><span class="line">    if (document.cookie) &#123;</span><br><span class="line">        usernam.value = obj.yourname;</span><br><span class="line">        checkbox.checked = true</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    sumbit.addEventListener(&#x27;click&#x27;, (e) =&gt; &#123;</span><br><span class="line">        e.preventDefault()</span><br><span class="line">        if (usernam.value != &#x27;&#x27; &amp;&amp; checkbox.checked) &#123;</span><br><span class="line">            const key = &#x27;yourname&#x27;;</span><br><span class="line">            const value = encodeURIComponent(usernam.value)</span><br><span class="line">            document.cookie = `$&#123;key&#125;=$&#123;value&#125;`</span><br><span class="line">        &#125;</span><br><span class="line">        console.log(document.cookie)</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>localstorage可以永久保存在浏览器里，sessionStorage一旦关闭页面就会删除</p>
+</blockquote>
+<h2 id="Class构造"><a href="#Class构造" class="headerlink" title="Class构造"></a>Class构造</h2><ol>
+<li>自定义属性需要在constructor中构造</li>
+<li>继承父类的子类在重构constructor时要使用super()来重构父类的自定义属性</li>
+<li>自定义的方法用<code>static</code> 修饰，要调用该静态方法只能使用该类来调用不能使用实例来调用</li>
+<li>get …() {}     set …(){}   可以用来获取类上的…属性</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const input = document.getElementById(&#x27;input&#x27;)</span><br><span class="line">const btn1 = document.getElementById(&#x27;btn1&#x27;)</span><br><span class="line">const btn2 = document.getElementById(&#x27;btn2&#x27;)</span><br><span class="line">const p = document.getElementById(&#x27;p&#x27;)</span><br><span class="line">class Bullshit &#123;</span><br><span class="line">    static tip() &#123;</span><br><span class="line">        return &#x27;你别急&#x27;</span><br><span class="line">    &#125;</span><br><span class="line">    static writetip() &#123;</span><br><span class="line">        p.innerHTML = this.tip()</span><br><span class="line">    &#125;</span><br><span class="line">    constructor(text, color) &#123;</span><br><span class="line">        this.text = text;</span><br><span class="line">        this.color = color;</span><br><span class="line">    &#125;</span><br><span class="line">    show() &#123;</span><br><span class="line">        p.innerHTML = this.text + input.value</span><br><span class="line">        p.style.color = this.color</span><br><span class="line">    &#125;</span><br><span class="line">    get extra() &#123;</span><br><span class="line">        return &#x27;你是我二&#x27;</span><br><span class="line">    &#125;</span><br><span class="line">    set extra(value) &#123;</span><br><span class="line">        this.value = value</span><br><span class="line">        p.innerHTML += this.value</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Bullshit2 extends Bullshit &#123;</span><br><span class="line">    constructor(text, color, fontSize) &#123;</span><br><span class="line">        //父类的构造函数要原封不动返回</span><br><span class="line">        super(text, color);</span><br><span class="line">        this.fontSize = fontSize</span><br><span class="line">    &#125;</span><br><span class="line">    show() &#123;</span><br><span class="line">        p.innerHTML = this.text + p.innerHTML</span><br><span class="line">        p.style.color = this.color</span><br><span class="line">        p.style.fontSize = this.fontSize</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">btn1.addEventListener(&#x27;click&#x27;, () =&gt; &#123;</span><br><span class="line">    const bullshit = new Bullshit(&#x27;我知道&#x27;, &#x27;#00a1d6&#x27;)</span><br><span class="line">    bullshit.show()</span><br><span class="line">    bullshit.extra = &#x27;子&#x27;</span><br><span class="line">    console.log(bullshit.extra)</span><br><span class="line">&#125;)</span><br><span class="line">btn2.addEventListener(&#x27;click&#x27;, () =&gt; &#123;</span><br><span class="line">    const bullshit2 = new Bullshit2(&#x27;你知道&#x27;, &#x27;#f85b88&#x27;, &#x27;30px&#x27;)</span><br><span class="line">    bullshit2.show()</span><br><span class="line">&#125;)</span><br><span class="line">p.addEventListener(&#x27;click&#x27;, () =&gt; &#123;</span><br><span class="line">    //静态方法要用构造函数来调用</span><br><span class="line">    Bullshit.writetip()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h2><ol>
+<li><p>浅拷贝：Object.assign({},list)、展开运算符、数组的concat()、slice()、Array.from(list)；只能实现对普通类型的拷贝，对于引用类型比如对象来说是浅拷贝</p>
+</li>
+<li><p>深拷贝：JSON.parse(JSON.stringify(list))</p>
+</li>
+</ol>
+<h2 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h2><p>在页面滚动到图片的位置时，才开始加载图片</p>
+<ol>
+<li>方法一：</li>
+</ol>
+<blockquote>
+<ol>
+<li>通过<code>const obersver = new IntersectionObserver(callback)</code> 来创建一个观察对象</li>
+<li>构造函数接收一个callback回调函数，该回调函数接收参数，第一个参数是在<strong>观察对象出现和消失时调用</strong></li>
+<li>在回调函数里设置赋予src的语法，最后关闭observer:<code>      obersver.**unobserve**(image)</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;const imgs = document.querySelectorAll(&#x27;img&#x27;)</span><br><span class="line"></span><br><span class="line">const callback = (entries) =&gt; &#123;</span><br><span class="line">    entries.forEach(entrie =&gt; &#123;</span><br><span class="line">       if (entrie.isIntersecting) &#123;</span><br><span class="line">            // console.log(entrie.target)</span><br><span class="line">            const image = entrie.target</span><br><span class="line">            const data_src = image.getAttribute(&#x27;data-src&#x27;)</span><br><span class="line">            image.setAttribute(&#x27;src&#x27;, data_src)</span><br><span class="line">                //关闭observe</span><br><span class="line">            obersver.unobserve(image)</span><br><span class="line">            console.log(&#x27;触发&#x27;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">const obersver = new IntersectionObserver(callback)</span><br><span class="line"></span><br><span class="line">imgs.forEach(img =&gt; &#123;</span><br><span class="line">    obersver.observe(img)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<ol start="2">
+<li>方法二：</li>
+</ol>
+<blockquote>
+<ol>
+<li>获取dom对于窗口最上方的距离：dom.getBoundClientRect().top</li>
+<li>获取window的窗口视图的高度：window.innerHeight</li>
+<li>两者相互比较，赋予图片src属性</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;const images = document.querySelectorAll(&#x27;img&#x27;)</span><br><span class="line"></span><br><span class="line">window.addEventListener(&#x27;scroll&#x27;, () =&gt; &#123;</span><br><span class="line">    images.forEach(image =&gt; &#123;</span><br><span class="line">       const img_height = image.getBoundingClientRect().top</span><br><span class="line">        if (img_height &lt; window.innerHeight) &#123;</span><br><span class="line">            const data_src = image.getAttribute(&#x27;data-src&#x27;)</span><br><span class="line">            image.setAttribute(&#x27;src&#x27;, data_src)</span><br><span class="line">        &#125;</span><br><span class="line">        console.log(11)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="宏任务和微任务"><a href="#宏任务和微任务" class="headerlink" title="宏任务和微任务"></a>宏任务和微任务</h2><ol>
+<li><p>宏任务（Web APIs）：大的任务，包括 新程序或子程序被直接执行（script）、事件的回调函数，setTImeout()、setInterval()、requestAnimationFrame、I&#x2F;O操作、setImmediate、UI rendering等等，</p>
+<p>宏任务是浏览器规定的</p>
+</li>
+<li><p>微任务（micro task quene）：小的任务，包括promis.then().catch().finally()、MutationObserver、Object.observe、process.nextTick()，微任务是es6语法规定的</p>
+</li>
+</ol>
+<blockquote>
+<p>执行顺序：全局匿名函数：同步函数 — 微任务 —- 渲染 — 宏任务</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/tslyyds/Picgo-Images@master/%E4%BA%8B%E4%BB%B6%E8%BD%AE%E5%BE%AA.png" alt="事件轮循"></p>
+<h2 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h2><p>定义：函数里将函数作为参数或者返回值是函数的函数</p>
+<blockquote>
+<p>注意事项：绑定时使用apply，绑定同时也执行了函数</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">            a: 1,</span><br><span class="line">            fun() &#123;</span><br><span class="line">                console.log(this.a)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">function a(fun) &#123;</span><br><span class="line">    return function(...args) &#123;</span><br><span class="line">       console.log(this)</span><br><span class="line">       fun.apply(this)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line">a(obj.fun).apply(obj, [1, 2, 3])</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>节流函数: 在规定时间内只允许进行一次操作</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const btn = document.querySelector(&#x27;button&#x27;)</span><br><span class="line">        btn.onclick = aa(function() &#123;</span><br><span class="line">            console.log(111)</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        function aa(fun) &#123;</span><br><span class="line">            let timer;</span><br><span class="line">            return function(...args) &#123;</span><br><span class="line">                if (timer) return</span><br><span class="line">                timer = setTimeout(() =&gt; &#123;</span><br><span class="line">                    timer = null</span><br><span class="line">                &#125;, 1000)</span><br><span class="line">                return fun.apply(this, args)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="浏览器加载过程"><a href="#浏览器加载过程" class="headerlink" title="浏览器加载过程"></a>浏览器加载过程</h2><p>浏览器渲染引擎工作流程</p>
+<ol>
+<li><p>第一步，构建 DOM 树：用 HTML Parser，分析 HTML 元素，构建一棵 DOM Tree；</p>
+</li>
+<li><p>第二步，生成样式表：用 CSS Parser，分析 CSS 文件和元素上的 inline 样式，生成页面的Style Rules；</p>
+</li>
+<li><p>第三步，构建 Render 树：将 DOM 树和样式表关联起来（Attachment），构建一棵 Render 树。每个 DOM 节点都有 attach 方法，接受样式信息，返回一个 render 对象（又名 renderer），这些 render 对象最终会被构建成一棵 Render Tree；</p>
+</li>
+<li><p>第四步，确定节点坐标：根据 Render 树结构，为每个 Render 树上的节点确定一个在显示屏上出现的精确坐标；</p>
+</li>
+<li><p>第五步，绘制页面：根据 Render 树和节点显示坐标，然后调用每个节点的 paint 方法，将它们绘制出来。creatDocumentFragment()，创建文档片段，将元素附加到文档片段里，然后将文档片段附加到dom树，该文档片段存在于内存，并不是在dom树上</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tslyyds/Picgo-Images@master/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B.png" alt="浏览器渲染过程"></p>
+<h2 id="JS引擎"><a href="#JS引擎" class="headerlink" title="JS引擎"></a>JS引擎</h2><p>浏览器内核负责解析html，css和渲染，对于js文件，浏览器先下载下来，然后交给v8引擎</p>
+<ol>
+<li><p>v8引擎原理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tslyyds/Picgo-Images@master/v.png" alt="v"></p>
+<p>步骤：将js代码转化为AST抽象语法树结构，再由Ignition将其转化为字节码，如果是一些经常使用的值，会直接转化为机器码，最后运行代码</p>
+</li>
+</ol>
+<p>	</p>
+<h2 id="JS执行机制"><a href="#JS执行机制" class="headerlink" title="JS执行机制"></a>JS执行机制</h2><ol>
+<li><p>初始化全局变量</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tslyyds/Picgo-Images@master/%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6.png" alt="执行机制"></p>
+</li>
+<li><p>因为js是单线程，只能同步进行编码，所以js采用了<strong>事件轮询</strong>的方法实现，核心是回调函数</p>
+</li>
+</ol>
+<p>	</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">console.log(&#x27;1&#x27;);</span><br><span class="line"></span><br><span class="line">setTimeout(function() &#123;</span><br><span class="line">    console.log(&#x27;2&#x27;);</span><br><span class="line">    process.nextTick(function() &#123;</span><br><span class="line">        console.log(&#x27;3&#x27;);</span><br><span class="line">    &#125;)</span><br><span class="line">    new Promise(function(resolve) &#123;</span><br><span class="line">        console.log(&#x27;4&#x27;);</span><br><span class="line">        resolve();</span><br><span class="line">    &#125;).then(function() &#123;</span><br><span class="line">        console.log(&#x27;5&#x27;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br><span class="line">process.nextTick(function() &#123;</span><br><span class="line">    console.log(&#x27;6&#x27;);</span><br><span class="line">&#125;)</span><br><span class="line">new Promise(function(resolve) &#123;</span><br><span class="line">    console.log(&#x27;7&#x27;);</span><br><span class="line">    resolve();</span><br><span class="line">&#125;).then(function() &#123;</span><br><span class="line">    console.log(&#x27;8&#x27;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">setTimeout(function() &#123;</span><br><span class="line">    console.log(&#x27;9&#x27;);</span><br><span class="line">    process.nextTick(function() &#123;</span><br><span class="line">        console.log(&#x27;10&#x27;);</span><br><span class="line">    &#125;)</span><br><span class="line">    new Promise(function(resolve) &#123;</span><br><span class="line">        console.log(&#x27;11&#x27;);</span><br><span class="line">        resolve();</span><br><span class="line">    &#125;).then(function() &#123;</span><br><span class="line">        console.log(&#x27;12&#x27;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>整体script作为第一个宏任务进去主线程，输出1</p>
+<p>遇到setTimeout，其回调函数压入宏任务队列中，记为set1</p>
+<p>遇到process.next()，压入微任务队列中，记为process1;</p>
+<p>遇到Promise，new Promise里的直接执行，输出7，then方法压入微任务队列，记为then1</p>
+<p>遇到setTimeout，其回调函数被分发到宏任务Event Queue中，记setTimeout2</p>
+<p>此时</p>
+<table>
+<thead>
+<tr>
+<th>宏任务</th>
+<th>微任务</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>setTimeout1</td>
+<td>process1</td>
+</tr>
+<tr>
+<td>setTimeout2</td>
+<td>then1</td>
+</tr>
+</tbody></table>
+<p>上表是第一轮事件循环宏任务结束时各Event Queue的情况，此时已经输出了1和7。</p>
+<p>我们发现了<code>process1</code>和<code>then1</code>两个微任务。</p>
+<p>执行<code>process1</code>,输出6。</p>
+<p>执行<code>then1</code>，输出8。</p>
+<table>
+<thead>
+<tr>
+<th>宏任务Event Queue</th>
+<th>微任务Event Queue</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>setTimeout2</td>
+<td>process2</td>
+</tr>
+<tr>
+<td></td>
+<td>then2</td>
+</tr>
+</tbody></table>
+<p>第二轮事件循环宏任务结束，我们发现有<code>process2</code>和<code>then2</code>两个微任务可以执行。</p>
+<p>输出3。</p>
+<p>输出5。</p>
+<p>第二轮事件循环结束，第二轮输出2，4，3，5。</p>
+<p>第三轮事件循环开始，此时只剩setTimeout2了，执行。</p>
+<p>直接输出9。</p>
+<p>将<code>process.nextTick()</code>分发到微任务Event Queue中。记为<code>process3</code>。</p>
+<p>直接执行<code>new Promise</code>，输出11。</p>
+<p>将<code>then</code>分发到微任务Event Queue中，记为<code>then3</code>。</p>
+<table>
+<thead>
+<tr>
+<th>宏任务Event Queue</th>
+<th>微任务Event Queue</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>process3</td>
+</tr>
+<tr>
+<td></td>
+<td>then3</td>
+</tr>
+</tbody></table>
+<p>第三轮事件循环宏任务执行结束，执行两个微任务<code>process3</code>和<code>then3</code>。</p>
+<p>输出10。</p>
+<p>输出12。</p>
+<p>第三轮事件循环结束，第三轮输出9，11，10，12。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/tslyyds/Picgo-Images@master/%E4%BA%8B%E4%BB%B6%E8%BD%AE%E5%BE%AA.png" alt="事件轮循"></p>
+<h2 id="浅、深拷贝复制"><a href="#浅、深拷贝复制" class="headerlink" title="浅、深拷贝复制"></a>浅、深拷贝复制</h2><ol>
+<li>浅复制，即对象内如果有引用对象，则其中一个改变另外的复制体也会被改变</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const obj2 = Object.assign(&#123;&#125;, obj1);</span><br><span class="line">//不过该方法只能复制对象本身的值，不能复制对象原型上的值，可以这样改进</span><br><span class="line">let clonePro = Object.getPrototypeOf(origin);</span><br><span class="line">let res = Object.assign(Object.create(clonePro),origin)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>深拷贝</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const obj4 = JSON.parse(JSON.stringify(obj3));</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数钟嵌套函数的两种情况"><a href="#函数钟嵌套函数的两种情况" class="headerlink" title="函数钟嵌套函数的两种情况"></a>函数钟嵌套函数的两种情况</h2><blockquote>
+<p>函数中定义的函数：一旦执行这个函数，就会定义出内部一个函数。因为作用域的存在，无法在外面直接调用访问。但是可以在这个函数内直接使用</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Foo()&#123;</span><br><span class="line">	getName=function()&#123;  //虽然这里没有用var，定义的是全局的，外部直接访问是无法访问的。</span><br><span class="line">		alert(1)</span><br><span class="line">	&#125;      //这里定义一个函数（从数据类型角度理解），因为是定义在函数内部的函数，外部直接访问是无法访问的。</span><br><span class="line">	return this;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>函数作为对象，定义的方法</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Foo()&#123;</span><br><span class="line">	getName=function()&#123;  //虽然这里没有用var，定义的是全局的，外部直接访问是无法访问的。</span><br><span class="line">		alert(1)</span><br><span class="line">	&#125;      //这里定义一个函数（从数据类型角度理解），因为是定义在函数内部的函数，外部直接访问是无法访问的。</span><br><span class="line">	return this</span><br><span class="line">&#125;</span><br><span class="line">//Foo.getName()  // Foo.getName is not a function</span><br><span class="line">Foo.getName=function()&#123;alert(2)&#125;   //把Foo作为一个函数对象！给它写方法getName</span><br><span class="line">Foo.getName()  //2,这时候是这个函数对象的方法</span><br></pre></td></tr></table></figure>
+
+<h2 id="Proxy和Reflect"><a href="#Proxy和Reflect" class="headerlink" title="Proxy和Reflect"></a>Proxy和Reflect</h2><blockquote>
+<p>proxy为代理，拦截某些获取操作并执行一定的程序</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">new Proxy(target,handle)  //代理的对象，处理函数</span><br><span class="line"></span><br><span class="line">let handle = &#123;</span><br><span class="line">	get(target,key,receiver)&#123;</span><br><span class="line">		if(....)</span><br><span class="line">		return Reflect.get(target,key,receive)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;  //target为对象，key为访问的属性，receiver</span><br><span class="line"></span><br><span class="line">target.name //这时候会启动代理</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Tan Shenglin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://example/2023/03/27/js%E7%9F%A5%E8%AF%86%E5%B7%A9%E5%9B%BA/">https://example/2023/03/27/js%E7%9F%A5%E8%AF%86%E5%B7%A9%E5%9B%BA/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Tan Shenglin</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/03/27/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="关于网络相关知识">
+                        
+                        <span class="card-title">关于网络相关知识</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-27
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Tan Shenglin
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/03/27/js%E7%9F%A5%E8%AF%86%E5%B7%A9%E5%9B%BA/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="js知识巩固">
+                        
+                        <span class="card-title">js知识巩固</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Tan Shenglin
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Tan Shenglin</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/tslyyds" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1737117947@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1737117947" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1737117947" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
